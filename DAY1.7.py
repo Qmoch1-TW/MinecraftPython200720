@@ -1,0 +1,22 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Jul 20 15:56:06 2020
+
+@author: user
+"""
+from mcpi.minecraft import Minecraft
+mc=Minecraft.create()
+
+
+X,Y,Z=mc.player.getTilePos()
+
+
+
+mc.setBlock(X+1,Y,Z,57)
+mc.setBlock(X-1,Y,Z,57)
+mc.setBlock(X,Y,Z+1,57)
+mc.setBlock(X,Y,Z-1,57)
+mc.setBlock(X+1,Y,Z+1,57)
+mc.setBlock(X-1,Y,Z+1,57)
+mc.setBlock(X+1,Y,Z-1,57)
+mc.setBlock(X-1,Y,Z-1,57)
